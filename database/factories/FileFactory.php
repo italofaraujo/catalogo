@@ -22,7 +22,7 @@ class FileFactory extends Factory
     public function definition()
     {
         return [
-            'product_id' => \App\Models\File::inRandomOrder()->fist()->id,
+            'product_id' => \App\Models\Product::inRandomOrder()->first()->id,
             'extension' => $this->faker->fileExtension
         ];
     }

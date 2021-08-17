@@ -15,7 +15,7 @@ class CreateFilesTable extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->id();
-            $table->string('type',5);
+            $table->string('extension',50);
             $table->foreignId('product_id')->constrained();
             $table->timestamps();
             $table->softDeletes();
