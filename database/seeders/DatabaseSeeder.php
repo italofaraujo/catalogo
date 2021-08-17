@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\File;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,7 +18,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CategorySeeder::class,
             ProductSeeder::class,
-            PhotoSeeder::class
+            FileSeeder::class
         ]);
     }
 }

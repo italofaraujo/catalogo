@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class PhotoSeeder extends Seeder
+class FileSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,6 @@ class PhotoSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Photo::factory(100)->create();
+        \App\Models\File::factory(100)->create();
     }
 }

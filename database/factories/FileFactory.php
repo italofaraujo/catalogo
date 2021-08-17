@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Photo;
+use App\Models\File;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PhotoFactory extends Factory
+class FileFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Photo::class;
+    protected $model = File::class;
 
     /**
      * Define the model's default state.
@@ -22,7 +22,8 @@ class PhotoFactory extends Factory
     public function definition()
     {
         return [
-            'product_id' => \App\Models\Product::inRandomOrder()->first()->id
+            'product_id' => \App\Models\File::inRandomOrder()->fist()->id,
+            'extension' => $this->faker->fileExtension
         ];
     }
 }
